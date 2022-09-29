@@ -6,13 +6,12 @@ import { ThemeProvider } from 'styled-components';
 
 import { Routes } from './routes';
 
-import { Header } from './pages/Header';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Header />
+      <Routes />
     </ThemeProvider>
   </React.StrictMode>
 )

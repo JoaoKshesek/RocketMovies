@@ -4,17 +4,24 @@ import { Link } from 'react-router-dom';
 export const Container = styled.header`
     grid-area: header;
 
-    height: 105px;
+    height: 116px;
     width: 100%;
+    gap: 64px;
 
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+    border-bottom-color: ${({ theme }) => theme.COLORS.GRAY_600};
 
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
-    padding: 0 80px;
+    padding: 30px 123px;
+
+    > h1 {
+        font-size: 24px;
+        color: ${({ theme }) => theme.COLORS.ROSE}
+    }
 
 `;
 
@@ -23,35 +30,28 @@ export const Profile = styled(Link)`
     align-items: center;
 
     > img {
-        width: 56px;
-        height: 56px;
+        width: 64px;
+        height: 64px;
         border-radius: 50%;
+        border: 1px solid ${({ theme }) => theme.COLORS.GRAY_600};
     }
 
     > div {
         display: flex;
         flex-direction: column;
-        margin-left: 16px;
+        align-items: flex-end;
+        margin-right: 9px;
         line-height: 24px;
+        width: 140px;
 
         span {
             font-size: 14px;
-            color:  ${({ theme }) => theme.COLORS.GRAY_100};
+            color:  ${({ theme }) => theme.COLORS.GRAY_300};
         }
 
         strong {
-            font-size: 18px;
+            font-size: 14px;
             color:  ${({ theme }) => theme.COLORS.WHITE};
         }
-    }
-`;
-
-export const Logout = styled.button`
-    border: none;
-    background: none;
-
-    > svg {
-        color:  ${({ theme }) => theme.COLORS.GRAY_100};
-        font-size: 36px;
     }
 `;
