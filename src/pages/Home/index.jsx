@@ -22,9 +22,18 @@ export function Home(){
                 </NewMovie>
             </Brand>
             <Content>
-                <Section>
-
+                <Section title="Interestellar">
+                
+                    
+                    <Tag title="Ficção Científica"/>
                     <Tag title="Drama"/>
+                    <Tag title="Família"/>
+                </Section>
+                <Section title="Interestellar">
+                
+                    <Tag title="Ficção Científica"/>
+                    <Tag title="Drama"/>
+                    <Tag title="Família"/>
                 </Section>
             </Content>
         </Container>

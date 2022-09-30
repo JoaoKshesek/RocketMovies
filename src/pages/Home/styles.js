@@ -21,7 +21,8 @@ export const Brand = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 123px;
+    padding: 0px 123px;
+    margin-top: 50px;
 
     > h1 {
         font-size: 32px;
@@ -54,6 +55,6 @@ export const NewMovie = styled(Link)`
 
 export const Content = styled.div`
     grid-area: content;
-    padding: 30px 123px;
+    padding: 12px 123px;
     overflow-y: auto;
 `;
