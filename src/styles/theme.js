@@ -9,10 +9,12 @@ export default {
       GRAY_300: "#948F99",
       GRAY_500: "#999591",
       GRAY_600: "#3E3B47",
-
-
+      
+      
+      
       BROWN: "#282124",
       ROSE: "#FF859B",
       WHITE: "#F4EDE8",
+      WHITE_200: "#E5E5E5",
     }
   }

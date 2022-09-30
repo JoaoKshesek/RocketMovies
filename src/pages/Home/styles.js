@@ -9,53 +9,51 @@ export const Container = styled.div`
     grid-template-rows: 105px 128px auto 64px;
     grid-template-areas: 
     "header"
-    "search"
+    "brand"
     "content"
     "content";
     background: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+    
 `;
 
 export const Brand = styled.div`
     grid-area: brand;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: ${({ theme }) => theme.COLORS.GRAY_600};
-
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    padding: 30px 123px;
 
     > h1 {
-        font-size: 24px;
-        color: ${({ theme }) => theme.COLORS.ORANGE};
+        font-size: 32px;
+        font-weight: 400;
+        color: #FFFFFF;
     }
 
 `;
 
-export const Search = styled.div`
-    grid-area: search;
-    padding: 64px 64px 0;
-`;
-
-export const Content = styled.div`
-    grid-area: content;
-    padding: 0 64px;
-    overflow-y: auto;
-`;
-
-export const NewNote = styled(Link)`
-    grid-area: newnote;
-    background-color: ${({ theme }) => theme.COLORS.ORANGE};
-    color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+export const NewMovie = styled(Link)`
+    background-color: ${({ theme }) => theme.COLORS.ROSE};
+    color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
 
+    height: 48px;
+    width: 207px;
+    border-radius: 8px;
+    padding: 0 32px;
+    font-size: 16px;
+    font-weight: 400;
+
     svg {
         margin-right: 8px;
     }
+`;
+
+export const Content = styled.div`
+    grid-area: content;
+    padding: 30px 123px;
+    overflow-y: auto;
 `;
