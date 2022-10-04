@@ -24,7 +24,7 @@ export function Home(){
             <Content>
                 <Section title="Interestellar">
                 
-                    
+                    <p>Teste</p>
                     <Tag title="Ficção Científica"/>
                     <Tag title="Drama"/>
                     <Tag title="Família"/>
