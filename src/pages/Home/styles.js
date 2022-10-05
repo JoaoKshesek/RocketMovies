@@ -34,7 +34,6 @@ export const Brand = styled.div`
 
 export const NewMovie = styled(Link)`
     background-color: ${({ theme }) => theme.COLORS.ROSE};
-    color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 
     border: none;
     display: flex;
@@ -42,14 +41,21 @@ export const NewMovie = styled(Link)`
     justify-content: center;
 
     height: 48px;
-    width: 207px;
+
     border-radius: 8px;
     padding: 0 32px;
     font-size: 16px;
     font-weight: 400;
 
     svg {
-        margin-right: 8px;
+        margin-right: 6px;
+        font-size: 22px;
+    }
+    a {
+        color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 `;
 
