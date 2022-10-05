@@ -5,17 +5,21 @@ import { Input } from "../../components/Input";
 import { Textarea } from "../../components/Textarea";
 import { Button } from "../../components/Button";
 import { ButtonBack } from '../../components/ButtonBack';
+import { MovieItem } from '../../components/MovieItem';
 
-import { Container, Form } from "./styles";
+
+import { Container, Form, Markers, Buttons } from "./styles";
 
 export function New() {
     return(
         <Container>
             <Header />
+            
+            
+            <Link to="/"><ButtonBack /></Link>
             <main>
                 <Form>
                     <header>
-                        <Link to="/"><ButtonBack /></Link>
                         <h1>Novo filme</h1>
                     </header>
                     <div>
@@ -24,7 +28,19 @@ export function New() {
                     </div>
 
                     <Textarea placeholder="Observações"/>
-                    <Button title="Salvar"/>
+
+                    <Markers>
+                        <h2>Marcadores</h2>
+                        <div className="tags">
+                            <MovieItem value="React" />
+                            <MovieItem isNew placeholder="Novo marcador" />
+                        </div>
+                    </Markers>
+
+                    <Buttons>
+                        <Button title="Excluir filme"/>
+                        <Button title="Salvar alterações"/>
+                    </Buttons>
                 </Form>
             </main>
         </Container>
